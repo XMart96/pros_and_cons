@@ -1,0 +1,115 @@
+@import "../node_modules/reset-css/reset.css";
+* {
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	height: 100vh;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 70vw;
+	min-width: 600px;
+	min-height: 400px;
+	height: 80vh;
+	display: flex;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+header {
+	padding: 50px;
+	width: 100%;
+	text-align: center;
+	color: #61dafb;
+	background: #282c34;
+	font-size: 40px;
+}
+.content {
+	width: 100%;
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	overflow: auto;
+}
+.listContainer {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	overflow: auto;
+}
+.listContainer > h2 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.listItem {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	background: #eee;
+	padding: 10px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+.listItem:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+.listItem:hover .removeIcon {
+	display: block;
+}
+.listItemText {
+	flex: 1;
+	word-break: break-word;
+	line-height: 22px;
+	cursor: pointer;
+}
+/******************/
+.addIcon,
+.removeIcon,
+.saveIcon {
+	margin-left: 10px;
+	cursor: pointer;
+	outline: none;
+}
+.removeIcon {
+	display: none;
+}
+/******************/
+.listItemForm {
+	display: flex;
+	align-items: center;
+	background: #eee;
+	padding: 10px;
+	border-radius: 10px;
+}
+.listItemInput {
+	flex: 1;
+	font-size: 16px;
+}
+/*.listItemInput:focus .addIcon {
+	display: block;
+}*/
+/******************/
+.loaderBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+	color: #61dafb;
+	padding: 50px;
+}
+/******************/
